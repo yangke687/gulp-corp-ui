@@ -1,0 +1,38 @@
+.nav{
+	.h(50);
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	border-top: 1px solid @navBorderColor;
+	background: @navBgColor;
+	z-index: 999;
+	ul{
+		display: flex;
+		flex-direction: row;
+		li{
+			flex: 1;
+			a{
+				display: block;
+			}
+			div{
+				.pt(2);
+				.iconfont{
+					.fs(25);
+				}
+			}
+			span{
+				display: block;
+				.fs(10);
+				color: @navTextColor;	
+				.mt(4);
+			}
+			&.active{
+				background: @navActiveBgColor;
+				*{
+					font-weight: 700;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,21 @@
+{
+  "name": "corp-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "connect": "^3.6.1",
+    "del": "^2.2.2",
+    "gulp-less": "^3.3.2",
+    "serve-static": "^1.12.2"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1"
+  }
+}

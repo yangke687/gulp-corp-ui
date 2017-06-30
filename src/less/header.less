@@ -1,0 +1,29 @@
+.header{
+	background: @mainColor;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	color: @headerTextColor;
+	.h(0);
+	.fs(20);
+	.lh(45);
+	letter-spacing: 1px;
+}
+
+.slider{
+	.h(187);
+	.mt(0);
+	width: 100%;
+	img{
+		width: 100%;
+		.h(187);
+	}
+	&.fixed{
+		position: fixed;
+		.top(0);
+		left: 0;
+		right: 0;
+		z-index: 999;
+	}
+}

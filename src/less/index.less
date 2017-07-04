@@ -1,0 +1,19 @@
+.main.index{
+	background-color: @indexBgColor !important;
+	.block{
+		background-color: @white;
+		border-top: 1px solid @indexBlockBorderColor;
+		border-bottom: 1px solid @indexBlockBorderColor;
+		.fs(0);
+		.mb(15);
+		*{
+			.fs(15);
+		}
+		&:first-child{
+			border-top-width: 0;
+		}
+		&:last-child{
+			border-bottom-width: 0;
+		}
+	}
+}

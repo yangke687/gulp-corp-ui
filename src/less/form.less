@@ -1,4 +1,5 @@
 form{
+	.pt(15);
 	.cells{
 		background-color: #FFFFFF;
 	    line-height: 1.5;
@@ -14,6 +15,11 @@ form{
 		    display: flex;
 		    -webkit-box-align: center;
 		    align-items: center;
+		    &:first-child{
+		    	&:before{
+		    		display: none;
+		    	}
+		    }
 		    .bd{
 		    	flex: 1;
 		    }
@@ -55,7 +61,8 @@ form{
 			    color: #e5e5e5;
 			    transform-origin: 0 0;
 			    transform: scaleY(0.5);
-			    left: 15px;
+			    .left(15);
+			    .right(15);
 			    z-index: 2;
 		    }
 		}
@@ -89,7 +96,7 @@ form{
 			    vertical-align: middle;
 			    text-decoration: inherit;
 			    content: "\e601";
-			    color: #09BB07;
+			    color: @mainColor;
 			    .fs(13);
 			    position: absolute;
 			    top: 50%;
@@ -131,4 +138,17 @@ form{
 	.btn_primary{
 		background-color: @mainColor;
 	}
+}
+
+input::-webkit-input-placeholder { /* WebKit browsers */
+    direction: rtl;
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    direction: rtl;
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ but I'm not sure about working */
+    direction: rtl;
+}
+input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    direction: rtl;
 }

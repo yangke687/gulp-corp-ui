@@ -11,6 +11,8 @@ gulp.task('copy', function() {
 		.pipe(gulp.dest('dist/images'));
 	gulp.src('src/fonts/*')
 		.pipe(gulp.dest('dist/fonts'));
+	gulp.src('src/js/*')
+		.pipe(gulp.dest('dist/js'));
 });
 
 gulp.task('style', function() {
@@ -25,7 +27,7 @@ gulp.task('clean', function(cb) {
 
 gulp.task('server', function() {
 	return connect().use(serve(__dirname + '/dist'))
-		.listen(8081)
+		.listen(8082)
 		.on('listening', function() {
 			console.log('Server Running...')
 		});

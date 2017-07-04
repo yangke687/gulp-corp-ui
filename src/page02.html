@@ -25,13 +25,13 @@
 					</div>
 					<span>找物业</span>
 				</li>
-				<li class="ta-c">
+				<li class="ta-c" data-url="https://mp.weixin.qq.com/s/GPtHv9snEmyEyJApAXugEw">
 					<div class="ta-c">
 						<span class="iconfont icon-old iconRed"></span>
 					</div>
 					<span>居养老</span>
 				</li>
-				<li class="ta-c">
+				<li class="ta-c" data-url="http://a.eqxiu.com/s/SJa1cnzZ">
 					<div class="ta-c">
 						<span class="iconfont icon-health iconGreen"></span>
 					</div>
@@ -136,8 +136,17 @@
 			</ul>
 		</div>
 	</div>
+	<script src="js/jquery.min.js"></script>
 	<script>
 		document.getElementsByTagName('html')[0].style.fontSize=  window.screen.width / 10 + 'px';
+		$(document).ready(function(){
+			$('.main>ul>li').bind('click',function(){
+				var url = $(this).data('url');
+				if(url) {
+					window.location = url;
+				}
+			});
+		});
 	</script>
 </body>
 </html>

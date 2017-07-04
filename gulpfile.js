@@ -7,7 +7,7 @@ var less = require('gulp-less');
 gulp.task('copy', function() {
 	gulp.src('src/*.html')
 		.pipe(gulp.dest('dist'))
-	gulp.src('src/images/*')
+	gulp.src('src/images/**/*')
 		.pipe(gulp.dest('dist/images'));
 	gulp.src('src/fonts/*')
 		.pipe(gulp.dest('dist/fonts'));

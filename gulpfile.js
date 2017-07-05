@@ -11,6 +11,8 @@ gulp.task('copy', function() {
 		.pipe(gulp.dest('dist/images'));
 	gulp.src('src/fonts/*')
 		.pipe(gulp.dest('dist/fonts'));
+	gulp.src('src/js/*')
+		.pipe(gulp.dest('dist/js'));
 });
 
 gulp.task('style', function() {

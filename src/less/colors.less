@@ -2,8 +2,8 @@
 @headerTextColor: #FFF;
 @mainBlockBgColor: #FFF;
 @mainBlockTextColor: #877e79;
-@mainBlockBorderColor: #fbfbfb;
-@mainBgColor: #FFF;
+@mainBlockBorderColor: #f4f6f3;
+@mainBgColor: #f4f6f3;
 @mainIconColor: #fc431d;
 @navTextColor: #f2f0ef;
 @navBgColor: #413f40;
@@ -16,6 +16,16 @@
 @iconRed: #fa6456;
 @iconGreen: #43c129;
 @iconYellow: #eccf3d;
+/* icon wrapper wrapper */
+@iconTransparentGreen: #ceeded;
+@iconTransparentOrange: #f8e4d9;
+@iconTransparentRed: #f6e8e9;
+@iconTransparentBlue: #d9eaf5;
+/* icon wrapper */
+@iconWrapperGreen: #24bcbc;
+@iconWrapperOrange: #fd8b54;
+@iconWrapperRed: #ef4e4a;
+@iconWrapperBlue: #2f9ce7;
 /* common ele */
 @checkBoxBorderColor: #D1D1D1;
 @checkBoxBgColor: #FFFFFF;
@@ -29,6 +39,10 @@
 @hotelBorderColor: #f4f6f3;
 @hotelTitleColor: #1e2839;
 @hotelAddrColor: #b9b4c6;
+
+.iconWhite{
+	color: #FFF !important;
+}
 
 .iconBlue{
 	color: @iconBlue !important;
@@ -48,4 +62,36 @@
 
 .iconMain{
 	color: @mainColor;
+}
+
+.iconWrapperGreen{
+	background-color: @iconWrapperGreen !important;
+}
+
+.iconWrapperOrange{
+	background-color: @iconWrapperOrange !important;
+}
+
+.iconWrapperRed{
+	background-color: @iconWrapperRed !important;
+}
+
+.iconWrapperBlue{
+	background-color: @iconWrapperBlue !important;
+}
+
+.transparent.green{
+	background-color: @iconTransparentGreen;
+}
+
+.transparent.orange{
+	background-color: @iconTransparentOrange;
+}
+
+.transparent.red{
+	background-color: @iconTransparentRed;
+}
+
+.transparent.blue{
+	background-color: @iconTransparentBlue;
 }

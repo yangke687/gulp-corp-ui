@@ -55,22 +55,39 @@
 		}
 		&:first-child{
 			border-top-width: 0;
+			border-bottom-width: 1px !important;
 		}
 		&:last-child{
 			border-bottom-width: 0;
+		}
+		&.notice{
+			position: relative;
+			overflow: hidden;
+			.details{
+				position: absolute;
+				top: 0;
+				right: 0;
+				p{
+					width: 2rem !important;
+					text-align: center;
+					transform: translate(50%, -50%) rotate(45deg) translate(0, 2em);
+    			-webkit-transform: translate(50%, -50%) rotate(45deg) translate(0, 2em);
+				}
+			}
 		}
 	}
 	.barcodes{
 		display: flex;
 		flex-direction: row;
 		>div{
-			.pt(5);
+			.pt(10);
 			.pl(10);
 			.pr(10);
 			width: 50%;
 		}
 		img{
 			.w(128);
+			.h(128);
 		}
 	}
 }

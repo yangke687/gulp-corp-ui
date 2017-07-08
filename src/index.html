@@ -15,7 +15,7 @@
 			<div>官房社区</div>
 		</div>
 		<div class="slider ta-c">
-			<img src="images/dark.jpg" />
+			<img src="images/actions/main.jpg" />
 		</div>
 		<div class="main mB51 index">
 			<div class="block notice">
@@ -31,17 +31,20 @@
 						7月15日至8月14日, 共30天
 					</div>
 				</div>
-				<div class="row">
-					<span >参与人群:</span>
+				<div class="row static-width">
+					<span>参与人群:</span>
 					<div class="excerpt">官房业主、云翔社区居委会工作人员、企业员工及其配偶子女、官渡师大附属学校的老师及学生家长 (以上人员的亲朋好友视报名情况另行通知); 以上人员均要求年满十八周岁以上。</div>
 				</div>
 			</div>
-			<div class="block notice">
+			<div class="block notice" data-url="act01.html">
+				<div class="details">
+					<p class="ta-c btn">详情</p>
+				</div>
 				<div>
 					<div class="title">
 						<span class="iconfont icon-arrow-right-bold iconMain"></span>
 						<div>
-							<span>天天步行·悦行都铎</span>
+							<span>天天健步·悦行都铎</span>
 						</div>
 					</div><!-- end of title -->
 					<div class="excerpt">
@@ -50,7 +53,10 @@
 				</div>
 			</div>
 			<!-- divider -->
-			<div class="block notice">
+			<div class="block notice" data-url="act02.html">
+				<div class="details">
+					<p class="ta-c btn">详情</p>
+				</div>
 				<div>
 					<div class="title">
 						<span class="iconfont icon-arrow-right-bold iconMain"></span>
@@ -64,7 +70,10 @@
 				</div>
 			</div>
 			<!-- divider -->
-			<div class="block notice">
+			<div class="block notice" data-url="act03.html">
+				<div class="details">
+					<p class="ta-c btn">详情</p>
+				</div>
 				<div>
 					<div class="title">
 						<span class="iconfont icon-arrow-right-bold iconMain"></span>
@@ -78,7 +87,10 @@
 				</div>
 			</div>
 			<!-- divider -->
-			<div class="block notice">
+			<div class="block notice" data-url="act04.html">
+				<div class="details">
+					<p class="ta-c btn">详情</p>
+				</div>
 				<div>
 					<div class="title">
 						<span class="iconfont icon-arrow-right-bold iconMain"></span>
@@ -101,11 +113,11 @@
 						</div>	
 					</div><!-- end of title -->
 					<div class="excerpt">
-						<span>1. 报名成功后识别左侧二维码，添加"活动小助手"为好友，并发送电话号码给"活动小助手"</span>
-						<span>2. 报名成功后识别右侧二维码，关注"微信运动“公众号</span>
+						<span>报名成功后识别左侧二维码，添加"活动小助手"为好友，并发送手机号给"活动小助手"; 识别右侧二维码，关注"微信运动“公众号
+						</span>
 						<div class="barcodes">
 							<div>
-								<img src="images/barcodes/wx-sports.png" />
+								<img src="images/barcodes/wx-assistant.png" />
 							</div>
 							<div>
 								<img src="images/barcodes/wx-sports.png" />
@@ -199,8 +211,19 @@
 			</ul>
 		</div>
 	</div>
+	<script src="js/jquery-1.12.4.js"></script>
 	<script>
 		document.getElementsByTagName('html')[0].style.fontSize=  window.screen.width / 10 + 'px';
+	</script>
+	<script>
+		$(document).ready(function(){
+			$('.block.notice').bind('click',function(){
+				var url = $(this).data('url');
+				if(url){
+					window.location = url;
+				}
+			});
+		});
 	</script>
 </body>
 </html>

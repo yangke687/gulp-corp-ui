@@ -6,8 +6,37 @@
 		border-bottom: 1px solid @indexBlockBorderColor;
 		.fs(0);
 		.mb(15);
+		>div{
+			display: flex;
+			flex-direction: column;
+			.title{
+				display: flex;
+				flex-direction: row;
+			}
+			.excerpt{
+				.pt(5);
+				.pl(20);
+				.fs(14);
+				.lh(24);
+				color: @lightTextColor;
+			}
+		}
 		*{
 			.fs(15);
+		}
+		.iconfont{
+			.pr(5);
+			.lh(30);
+			& ~ div{
+				display: flex;
+				flex-direction: column;
+				span:first-child{
+					.lh(30);
+				}
+				span{
+					.lh(20);
+				}
+			}
 		}
 		&:first-child{
 			border-top-width: 0;

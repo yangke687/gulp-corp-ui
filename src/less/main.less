@@ -72,16 +72,26 @@
 		.pl(15);
 		.pr(15);
 		.fs(16);
-		>div{
-			>span{
-				&:first-child{
-					.pr(5);
-				}
-			}
+		>div.row{
+			display: flex;
+			flex-direction: row !important;
 			display: flex;
 			.lh(32);
+			>span{
+				&:first-child{
+					.pr(15);
+				}
+			}
+			.excerpt{
+				padding-left: 0 !important;
+			}
 			&.tip{
 				color: @noticeTipTextColor;
+			}
+			&:last-child{
+				>span{
+					.fb(290);
+				}
 			}
 		}
 		.iconfont{

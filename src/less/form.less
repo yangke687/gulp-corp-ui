@@ -62,6 +62,13 @@ form{
 			    position: relative;
 			    z-index: 1;
 		    }
+		    .fixed-width{
+		    	.w(105);
+		    	float: right;
+		    	&:after{
+		    		clear: both;
+		    	}
+		    }
 		    &:before{
 		    	content: " ";
 			    position: absolute;

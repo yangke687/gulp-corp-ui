@@ -1,10 +1,10 @@
 .nav{
-	.h(50);
 	position: fixed;
 	bottom: 0;
 	left: 0;
 	right: 0;
 	border-top: 1px solid @navBorderColor;
+	border-width: 0;
 	background: @navBgColor;
 	z-index: 999;
 	ul{
@@ -12,6 +12,8 @@
 		flex-direction: row;
 		li{
 			flex: 1;
+			.pt(2);
+			.pb(3);
 			a{
 				display: block;
 			}

@@ -1,0 +1,49 @@
+.main.hotel{
+	background-color: @mainBlockBgColor;
+	>ul{
+		display: flex;
+		flex-direction: column;
+		.pl(10);
+		.pr(10);
+		>li{
+			display: flex;
+			flex-direction: row;
+			position: relative;
+			.pt(10);
+			.pb(10);
+			img{
+				.w(80);
+				.h(80);
+			}
+			div{
+				flex: 1;
+				.pl(17);
+				h2{
+					color: @hotelTitleColor;
+					.fs(20);
+					.lh(40);
+				}
+				p{
+					.fs(15);
+					.lh(20);
+					color: @hotelAddrColor;
+				}
+			}
+			.stars{
+				position: absolute;
+				.top(18);
+				right: 0;
+				background: transparent;
+				.h(25);
+				.w(150);
+				.iconfont{
+					float: right;
+					display: inline-block;
+					.mr(-5);
+					.fs(25);
+					.lh(25);
+				}
+			}
+		}
+	}
+}

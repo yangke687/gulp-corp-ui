@@ -1,5 +1,6 @@
 .header{
-	background: @mainColor;
+	display: none;
+	background: @navBgColor;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -9,15 +10,18 @@
 	.fs(20);
 	.lh(45);
 	letter-spacing: 1px;
+	&.show{
+		.h(45);
+	}
 }
 
 .slider{
-	.h(187);
+	.h(200);
 	.mt(0);
 	width: 100%;
 	img{
 		width: 100%;
-		.h(187);
+		.h(200);
 	}
 	&.fixed{
 		position: fixed;

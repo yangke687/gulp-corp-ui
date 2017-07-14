@@ -3,7 +3,8 @@
 @import url('./header.less');
 @import url('./main.less');
 @import url('./nav.less');
-@import url('./dark-nav.less');
+@import url('./index.less');
+@import url('./hotel.less');
 @import url('./form.less');
 @import url('./dark.less');
 
@@ -22,12 +23,16 @@
 	width: unit(@px / 37.5,rem);
 }
 
+.min-w(@px){
+	min-width: unit(@px/37.5,rem);
+}
+
 .h(@px){
 	height: unit(@px/37.5,rem);
 }
 
 .min-h(@px){
-	height: unit(@px/37.5,rem);
+	min-height: unit(@px/37.5,rem);
 }
 
 .lh(@px){
@@ -84,6 +89,10 @@
 	right: unit(@px/37.5,rem);
 }
 
+.fb(@px){
+	flex-basis: unit(@px/37.5,rem);
+}
+
 /* global class */
 .ta-c{
 	text-align: center;
@@ -96,5 +105,9 @@
 }
 
 *{
+<<<<<<< HEAD
 	-webkit-appearance: none;
+=======
+	-webkit-appearance:none;
+>>>>>>> activity
 }

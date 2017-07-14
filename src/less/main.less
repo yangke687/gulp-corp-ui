@@ -1,8 +1,8 @@
 .mT232{
-	.mt(190);
+	.mt(200);
 }
 .mB51{
-	.mb(330);
+	.mb(90);
 }
 .main{
 	padding: 0;
@@ -29,8 +29,9 @@
 				margin: 0 auto;
 				.w(64);
 				.h(64);
-				background: @mainBlockBgColor;
-				border-radius: 10px;
+				//background: @mainBlockBgColor;
+				// border-radius: 50%;
+				background: @mainBgColor;
 				.iconfont{
 					display: block;
 					margin: 0 auto;
@@ -40,12 +41,19 @@
 				}
 				& ~ span{
 					display: block;
-					.mt(0);
+					//.mt(10);
 					.mb(10);
 					.fs(13);
 					color: @mainBlockTextColor;
 					font-weight: 500;
 					letter-spacing: 1px;
+				}
+				&.transparent{
+					// border-radius: 50%;
+					// .pt(5);
+					// .pb(5);
+					// .pl(5);
+					// .pr(5);
 				}
 			}
 			&.pending{
@@ -64,10 +72,27 @@
 		.pl(15);
 		.pr(15);
 		.fs(16);
-		>div{
+		>div.row{
+			display: flex;
+			flex-direction: row !important;
+			display: flex;
 			.lh(32);
+			>span{
+				&:first-child{
+					.pr(15);
+				}
+			}
+			.excerpt{
+				padding-left: 0 !important;
+			}
 			&.tip{
 				color: @noticeTipTextColor;
+			}
+			&.static-width{
+				>span{
+					.pr(0);
+					.min-w(78);
+				}
 			}
 		}
 		.iconfont{

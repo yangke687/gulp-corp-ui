@@ -1,4 +1,5 @@
 form{
+	.pt(15);
 	.cells{
 		background-color: #FFFFFF;
 	    line-height: 1.5;
@@ -14,6 +15,11 @@ form{
 		    display: flex;
 		    -webkit-box-align: center;
 		    align-items: center;
+		    &:first-child{
+		    	&:before{
+		    		display: none;
+		    	}
+		    }
 		    .bd{
 		    	flex: 1;
 		    }
@@ -44,6 +50,27 @@ form{
 			    line-height: inherit;
 			    outline: 0;
 		    }
+		    .select{
+		    	-webkit-appearance: none;
+			    border: 0;
+			    outline: 0;
+			    background-color: transparent;
+			    width: 100%;
+			    font-size: inherit;
+			    .h(30);
+			    .lh(30);
+			    position: relative;
+			    z-index: 1;
+		    }
+		    .fixed-width{
+		    	.w(105);
+		    	float: right;
+		    	padding-left: 0;
+		    	text-align: left;
+		    	&:after{
+		    		clear: both;
+		    	}
+		    }
 		    &:before{
 		    	content: " ";
 			    position: absolute;
@@ -55,7 +82,8 @@ form{
 			    color: #e5e5e5;
 			    transform-origin: 0 0;
 			    transform: scaleY(0.5);
-			    left: 15px;
+			    .left(15);
+			    .right(15);
 			    z-index: 2;
 		    }
 		}
@@ -89,7 +117,7 @@ form{
 			    vertical-align: middle;
 			    text-decoration: inherit;
 			    content: "\e601";
-			    color: #09BB07;
+			    color: @mainColor;
 			    .fs(13);
 			    position: absolute;
 			    top: 50%;
@@ -119,7 +147,6 @@ form{
 	    .pl(14);
 	    .pr(14);
 	    box-sizing: border-box;
-	    .fs(18);
 	    text-align: center;
 	    text-decoration: none;
 	    color: #FFFFFF;
@@ -131,4 +158,17 @@ form{
 	.btn_primary{
 		background-color: @mainColor;
 	}
+}
+
+input::-webkit-input-placeholder { /* WebKit browsers */
+    direction: rtl;
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    direction: rtl;
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ but I'm not sure about working */
+    direction: rtl;
+}
+input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    direction: rtl;
 }

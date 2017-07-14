@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+  	<meta name="apple-mobile-web-app-capable" content="yes">
+  	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>官房社区</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="fonts/iconfont.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="header ta-c">
+			<div>住酒店</div>
+		</div>
+		<div class="main hotel">
+			<ul>
+				<li data-url="http://mp.weixin.qq.com/s/LCl4yBPlllLcm6xl_xn9OQ">
+					<img src="images/hotels/lj.jpg" />
+					<div>
+						<h2>丽江官房大酒店</h2>
+						<p>丽江 古城</p>
+						<p>格里拉大道延伸段</p>
+					</div>
+					<div class="stars">
+						<span class="iconfont icon-star-tag"></span>
+						<span class="iconfont icon-star-tag"></span>
+						<span class="iconfont icon-star-tag"></span>
+						<span class="iconfont icon-star-tag"></span>
+						<span class="iconfont icon-star-tag"></span>
+					</div>
+				</li>
+				<li data-url="http://wx.qjgf.net/app/index.php?i=1&c=home">
+					<img src="images/hotels/qj.jpg" />
+					<div>
+						<h2>曲靖官房大酒店</h2>
+						<p>云南 曲靖</p>
+						<p>麒麟区南城门外</p>
+					</div>
+					<div class="stars">
+						<span class="iconfont icon-star-tag"></span>
+						<span class="iconfont icon-star-tag"></span>
+						<span class="iconfont icon-star-tag"></span>
+						<span class="iconfont icon-star-tag"></span>
+						<span class="iconfont icon-star-tag"></span>
+					</div>
+				</li>
+				<li data-url="http://mp.weixin.qq.com/s/xVXq_Cg_dTUimue0nTEWZw">
+					<img src="images/hotels/bs.jpg" />
+					<div>
+						<h2>保山官房大酒店</h2>
+						<p>云南 保山</p>
+						<p>同仁街与上巷街交口处</p>
+					</div>
+					<div class="stars">
+						<span class="iconfont icon-star-tag"></span>
+						<span class="iconfont icon-star-tag"></span>
+						<span class="iconfont icon-star-tag"></span>
+						<span class="iconfont icon-star-tag"></span>
+						<span class="iconfont icon-star-tag"></span>
+					</div>
+				</li>
+				<li data-url="http://m.ctrip.com/html5/hotel/HotelDetail/121171.html">
+					<img src="images/hotels/tc.jpg" />
+					<div>
+						<h2>腾冲官房大酒店</h2>
+						<p>云南 保山</p>
+						<p>腾冲县 腾越路</p>
+					</div>
+					<div class="stars">
+						<icon class="iconfont icon-star-tag"></icon>
+						<icon class="iconfont icon-star-tag"></icon>
+						<icon class="iconfont icon-star-tag"></icon>
+						<icon class="iconfont icon-star-tag"></icon>
+						<icon class="iconfont icon-star-tag"></icon>
+					</div>
+				</li>
+				<li data-url="http://720yun.com/t/37e25apfyya?pano_id=652571">
+					<img src="images/hotels/hh.jpg" />
+					<div>
+						<h2>红河官房大酒店</h2>
+						<p>云南 红河</p>
+						<p>蒙自县南湖南路8号</p>
+					</div>
+					<div class="stars">
+						<icon class="iconfont icon-star-tag"></icon>
+						<icon class="iconfont icon-star-tag"></icon>
+						<icon class="iconfont icon-star-tag"></icon>
+						<icon class="iconfont icon-star-tag"></icon>
+						<icon class="iconfont icon-star-tag"></icon>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="nav">
+			<ul>
+				<li class="ta-c">
+					<a href="index.html">
+						<div>
+							<span class="iconfont icon-sports"></span>
+						</div>
+						<span>乐·运动</span>
+					</a>
+				</li>
+				<li class="ta-c active">
+					<a href="page01.html">
+						<div>
+							<span class="iconfont icon-life"></span>
+						</div>
+						<span>享·生活</span>
+					</a>
+				</li>
+				<li class="ta-c">
+					<a href="page02.html">
+						<div>
+							<span class="iconfont icon-service"></span>
+						</div>
+						<span>精·服务</span>
+					</a>
+				</li>
+				<li class="ta-c">
+					<a href="page03.html">
+						<div>
+							<span class="iconfont icon-project"></span>
+						</div>
+						<span>品·项目</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<script src="js/jquery-1.12.4.js"></script>
+	<script>
+		document.getElementsByTagName('html')[0].style.fontSize=  window.screen.width / 10 + 'px';
+	</script>
+	<script>
+		$(document).ready(function(){
+			$('.hotel>ul>li').bind('click',function(){
+				var url = $(this).data('url');
+				if(url){
+					window.location = url;
+				}
+			});
+		});
+	</script>
+</body>
+</html>

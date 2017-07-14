@@ -3,6 +3,7 @@ var del = require('del');
 var connect = require('connect');
 var serve = require('serve-static');
 var less = require('gulp-less');
+var autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('copy', function() {
 	gulp.src('src/*.html')
@@ -18,6 +19,7 @@ gulp.task('copy', function() {
 gulp.task('style', function() {
 	gulp.src('src/less/style.less')
 		.pipe(less())
+		.pipe(autoprefixer())
 		.pipe(gulp.dest('./dist/css'));
 });
 

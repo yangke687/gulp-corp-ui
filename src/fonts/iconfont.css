@@ -1,18 +1,10 @@
 
 @font-face {font-family: "iconfont";
-<<<<<<< HEAD
-  src: url('iconfont.eot?t=1498830203161'); /* IE9*/
-  src: url('iconfont.eot?t=1498830203161#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('iconfont.woff?t=1498830203161') format('woff'), /* chrome, firefox */
-  url('iconfont.ttf?t=1498830203161') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('iconfont.svg?t=1498830203161#iconfont') format('svg'); /* iOS 4.1- */
-=======
-  src: url('iconfont.eot?t=1499479890807'); /* IE9*/
-  src: url('iconfont.eot?t=1499479890807#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('iconfont.woff?t=1499479890807') format('woff'), /* chrome, firefox */
-  url('iconfont.ttf?t=1499479890807') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('iconfont.svg?t=1499479890807#iconfont') format('svg'); /* iOS 4.1- */
->>>>>>> activity
+  src: url('iconfont.eot?t=1500599205058'); /* IE9*/
+  src: url('iconfont.eot?t=1500599205058#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1500599205058') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1500599205058') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1500599205058#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .iconfont {
@@ -35,7 +27,11 @@
 
 .icon-health:before { content: "\e618"; }
 
+.icon-life-fee:before { content: "\e63f"; }
+
 .icon-hotel:before { content: "\e678"; }
+
+.icon-pm-fee:before { content: "\e60d"; }
 
 .icon-checked:before { content: "\e601"; }
 
@@ -49,11 +45,23 @@
 
 .icon-service:before { content: "\e62d"; }
 
+.icon-notice:before { content: "\e610"; }
+
 .icon-life:before { content: "\e630"; }
+
+.icon-profile:before { content: "\e614"; }
 
 .icon-project:before { content: "\e617"; }
 
+.icon-heart-service:before { content: "\e61b"; }
+
+.icon-phone-service:before { content: "\e646"; }
+
 .icon-play:before { content: "\e725"; }
 
+.icon-proposal:before { content: "\e608"; }
+
 .icon-arrow-right:before { content: "\e693"; }
+
+.icon-repair:before { content: "\e605"; }
 

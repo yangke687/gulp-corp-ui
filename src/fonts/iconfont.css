@@ -1,10 +1,10 @@
 
 @font-face {font-family: "iconfont";
-  src: url('iconfont.eot?t=1500599205058'); /* IE9*/
-  src: url('iconfont.eot?t=1500599205058#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('iconfont.woff?t=1500599205058') format('woff'), /* chrome, firefox */
-  url('iconfont.ttf?t=1500599205058') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('iconfont.svg?t=1500599205058#iconfont') format('svg'); /* iOS 4.1- */
+  src: url('iconfont.eot?t=1503275854315'); /* IE9*/
+  src: url('iconfont.eot?t=1503275854315#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1503275854315') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1503275854315') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1503275854315#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .iconfont {
@@ -34,6 +34,8 @@
 .icon-pm-fee:before { content: "\e60d"; }
 
 .icon-checked:before { content: "\e601"; }
+
+.icon-airplane:before { content: "\e6d0"; }
 
 .icon-star-tag:before { content: "\e60b"; }
 
